@@ -57,141 +57,12 @@ c = int(a)**int(b) 
 # 거듭제곱. a^b 즉 2^10 == 1024
 
 print(int(a)//int(b))
-#나누기. // 두번써야함. 몫만나옴
-
-
-a=float(input())
-print( format(a, ".2f") )
-#컴퓨터 프로그래밍에서 실수 변환이나 실수를 사용하는 계산은 
-#정확하게 변환되거나 계산되는 것이 아니라, 거의 모두 근사값으로 계산되는 것이라고 할 수 있다.  
-
-
-print(not a)
-# ! a같은거일듯
-
-a = 1
-print(~a) #-2가 출력된다.
-#2의보수표현
-#비트단위(bitwise)연산자 ~ 를 붙이면 된다.(~ : tilde, 틸드라고 읽는다.)
-#~(bitwise not), &(bitwise and), |(bitwise or), ^(bitwise xor),
-#<<(bitwise left shift), >>(bitwise right shift)
-
-c = (a if (a>=b) else b)
-# 3개의 요소로 이루어지는 3항 연산은
-# “x if C else y" 의 형태로 작성이 된다.
-
-
-if( int(a) % 2 == 0) :
-    print("even")
-else:
-    print("odd")
-    
-if( int(b) % 2 == 0) :
-    print("even")
-else:
-    print("odd")
-    
-if( int(c) % 2 == 0) :
-    print("even")
-else:
-    print("odd")
-#if, else 사용법    
-a, b  = input().split() 
-# a와 b를 입력받아서 따로 넣어준다
-
-print(a,a,a,b) 
-# a 3번, b 1번 출력
-
-a, b = input().split(":")
-print(a,b, sep=":")
-# 24:24 -> 24:24
-# sep=“:” 가 a, b를 separate해줌
-
-
-s = input()
-print(s[0:2])
-# 123456이라면, 12이 표현됨. 
-# s[a:b] -> a번째 문자부터 b-1번째! 문자까지. 
-
-w1, w2 = input().split()
-s = w1+w2
-print(s)
-
+#몫만 생기는 나누기. // 두번써야함. 
+#만약 하나만쓴다면? (a는 1, b는 10일경우)
 a,b = input().split()
-print(int(a) + int(b))
-# 123 -123 들어왔을때 return 0
-
-a = input()
-a = int(a)
-print('%x' %a)
-# %변수에 있는거를, 16진수로 표현
-# print(‘%X’, %a)라면 대문자나옴
-
-
-a = input()
-n = int(a, 16)      #입력된 a를 16진수로 인식해 변수 n에 저장
-print('%o' % n)  #n에 저장되어있는 값을 8진수(octal) 형태 문자열로 출력
-
-a, b  = input().split() 
-# a와 b를 입력받아서 따로 넣어준다
-
-print(a,a,a,b) 
-# a 3번, b 1번 출력
-
-a, b = input().split(":")
-print(a,b, sep=":")
-# 24:24 -> 24:24
-# sep=“:” 가 a, b를 separate해줌
-
-s = input()
-print(s[0:2])
-# 123456이라면, 12이 표현됨. 
-# s[a:b] -> a번째 문자부터 b-1번째! 문자까지. 
-
-w1, w2 = input().split()
-s = w1+w2
-print(s)
-# 그냥 split은 공백을기준으로함
-
-a,b = input().split()
-print(int(a) + int(b))
-# 123 -123 들어왔을때 return 0
-
-a = input()
-a = int(a)
-print('%x' %a)
-# %변수에 있는거를, 16진수로 표현
-# print(‘%X’, %a)라면 대문자나옴
-
-
-a = input()
-n = int(a, 16)      #입력된 a를 16진수로 인식해 변수 n에 저장
-print('%o' % n)  #n에 저장되어있는 값을 8진수(octal) 형태 문자열로 출력
-
-a = ord(input())
-print(a)
-# ord( ) 는 어떤 문자의 순서 위치(ordinal position) 값을 의미한다
-# input이 A라면, return 65
-
-c = int(input())
-print(chr(c))
-# chr은 character로 바꿔주는 것.
-# tip : 
-# 입력은 기본적으로 모두 문자열로 입력되는 것이라고 할 수 있다. 
-#따라서, 입력 값이 문자/문자열/정수/실수인지에 따라서 먼저 정확하게 변환시킨 다음에 #사용하거나 계산하는 것이 좋다.
-
-
-w, n = input().split()
-print(w*int(n))
-
-# love 3 -> lovelovelove
-#문자열 * 정수 or 정수 * 문자열은 그 문자열을 여러 번 반복한 문자열을 만들어 준다.
-
-c = int(a)**int(b) 
-# 거듭제곱. a^b 즉 2^10 == 1024
-
-print(int(a)//int(b))
-#나누기. // 두번써야함. 몫만나옴
+print(int(a)/ int(b))	# 0.1
+print(int(a)//int(b))	# 0
+print(int(a)%int(b))	# 1
 
 
 a=float(input())
@@ -230,15 +101,49 @@ if( int(c) % 2 == 0) :
 else:
     print("odd”)
 #if, else 사용법    
-a = ord(input())
-print(a)
-# ord( ) 는 어떤 문자의 순서 위치(ordinal position) 값을 의미한다
-# input이 A라면, return 65
 
-c = int(input())
-print(chr(c))
-# chr은 character로 바꿔주는 것.
-# tip : 
-# 입력은 기본적으로 모두 문자열로 입력되는 것이라고 할 수 있다. 
-#따라서, 입력 값이 문자/문자열/정수/실수인지에 따라서 먼저 정확하게 변환시킨 다음에 #사용하거나 계산하는 것이 좋다.
 
+a = int(input())
+if (a >= 90):
+    print('A')
+elif (a >= 70):
+    print('B')
+elif (a >= 40):
+    print('C')
+else:
+    print('D')
+# if, elif (elseif가 아니라 elif)
+
+
+a = 1
+while (a != 0):
+    a = int(input())
+    if (a != 0):
+      print(a)
+# while문 기본사용법. if가 있을때는, tab을 해줘야한다
+
+
+
+while i<=c:
+    print(chr(i), end=' ')
+    i+=1
+# print(end=‘ ‘) 해주면, newline 없어짐
+
+
+
+for i in range(1, a+1, 1):
+    if(i % 2 == 0):
+        sum = sum + i
+#range(n) 은 0, 1, 2, ... , n-2, n-1 까지의 수열을 의미한다.
+#range(끝)
+#range(시작, 끝)
+#range(시작, 끝, 증감)
+#형태로 수열을 표현할 수 있다. 시작 수는 포함이고, 끝 수는 포함되지 않는다. [시작, 끝)
+
+
+while True:
+     x=input()
+     print(x)
+     if x=='q':
+          break
+# 이렇게 true로 설정해두고, break으로 끊을 수도 있다.
