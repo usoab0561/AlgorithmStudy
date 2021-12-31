@@ -147,3 +147,7 @@ while True:
      if x=='q':
           break
 # 이렇게 true로 설정해두고, break으로 끊을 수도 있다.
+
+
+print(round(h*b*c*s/8/1024/1024, 1), "MB")
+# round를 사용해서, float같이 자리수 지정가능
