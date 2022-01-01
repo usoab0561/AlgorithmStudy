@@ -151,3 +151,36 @@ while True:
 
 print(round(h*b*c*s/8/1024/1024, 1), "MB")
 # round를 사용해서, float같이 자리수 지정가능
+
+
+
+n = int(input())
+inputs = input().split()
+
+for i in range(n): #0~n-1까지
+    inputs[i] = int(inputs[i])
+    
+list = [] # 리스트만들기
+
+for i in range(24): #0~23까지
+    list.append(0)  #0넣어주기
+
+for i in range(n):
+    list[inputs[i]] += 1
+    
+for i in range(1,24):
+    print(list[i], end=' ')
+# list는 선언되지 않았는데, 접근은 불가능함. 즉 list = [] 다음 list[0] = 1 이런식 불가능, append 사용해야함.
+
+
+for i in range(n-1, -1, -1):
+# 음수로할때는, 그 수는 포함되지 않아서 오히려 -1까지 해줘야함. 
+# 그러니까 n-1, n-2 , … , 0까지라는말
+
+  print()
+# 이렇게하면 그냥 뉴라인
+
+# [0 for j in range(20)]  #20개의 0이 들어간 [0, 0, 0, ... , 0, 0, 0] 리스트 
+#아래처럼 작성하면 위와 같은 리스트가 20개가 들어간 리스트를 한 번에 만들어 준다. #d = [[0 for j in range(20)] for i in range(20)]
+#이러한 리스트 생성 방식을 List Comprehensions 라고 한다.
+
