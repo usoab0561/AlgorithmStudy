@@ -3,28 +3,34 @@
 <br>
 
 ```python
-def dfs(graph, vertex, visited):
-  visited[vertex] = True      # vertex 먼저 방문했다 해주고
-  print(vertex, end= ' ')
+n,m = map(int, input().split())
+
+graph = []
+for i in range(n):                                                  # 1 1 1 1 1 1 ... 이런거 입력받는거
+  graph.append(list(map(int, input())))
+
+
+def dfs(x, y):
+  if x <= -1 or x >= n or y <= -1 or y >= m:
+    return False
   
-  #recursion
-  for i in graph[vertex]:     # 그래프 전체 돌아다니면서
-    if not visited[i]:        # 안돌았으면
-      dfs(graph, i, visited)  # recursion 해줌
-      
-graph =[
-  [],
-  [2,3,8],
-  [1,7],
-  [1,4,5],
-  [3,5],
-  [3,4],
-  [7],
-  [2,6,8],
-  [1,7]
-]
+  if graph[x][y] == 0:
+    graph[x][y] = 1
+    dfs(x-1,y)
+    dfs(x,y-1)
+    dfs(x+1,y)
+    dfs(x,y+1)
+    return True
+  else:
+    return False
+  
+result = 0
 
-visited = [False] * 9 # [False, False, ... , False]
+for i in range(n):
+  for j in range(m):
+    if dfs(i,j) == True:
+      result += 1
+ 
 
-dfs(graph, 1, visited)
+print(result)
 ```
