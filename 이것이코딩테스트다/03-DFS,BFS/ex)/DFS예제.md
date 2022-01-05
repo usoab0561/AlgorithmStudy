@@ -34,3 +34,4 @@ for i in range(n):
 
 print(result)
 ```
+![image](https://user-images.githubusercontent.com/84604563/148207607-691cb908-787b-49ce-8017-9716647bb0cc.png)
