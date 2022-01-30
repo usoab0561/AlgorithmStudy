@@ -14,6 +14,8 @@ from animal_ins
 order by animal_id
 ```
 
+배운점 1 : 조건문 사용하는법. case when then else end.  
+배운점 2 : like 써서 when 이후 넣어 활용.
 
 ```
 case
