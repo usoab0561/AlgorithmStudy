@@ -8,5 +8,4 @@ from animal_ins
 order by animal_id
 ```
 
-배운점 1 : select ifnull(name, 'No name') 처럼 가져올때 값이 null이면 바꾸는걸 할 수 있다.
-## ifnull(바꾸고싶은colum, '바꿀것')
+배운점 1 : select ifnull(name, 'No name') 처럼 가져올때 값이 null이면 바꾸는걸 할 수 있다. ifnull(바꾸고싶은colum, '바꿀것')
