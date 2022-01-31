@@ -31,6 +31,7 @@ A368930
 # SELECT animal_id, name, sex_upon_intake
 # from animal_ins
 # where name = "Lucy" or name = "Ella" or name = "Pickle" or name = "Rogan" or name = "Sabrina" or name = "Mitty"
+# 위 처럼 하나하나 or 쓰는 것 보다, 아래 처럼 where 원하는컬럼 in("찾고싶은것1", "찾고싶은것2", "...") 식으로 하는게 훨 빠르고 좋다.
 
 SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE
 FROM ANIMAL_INS
