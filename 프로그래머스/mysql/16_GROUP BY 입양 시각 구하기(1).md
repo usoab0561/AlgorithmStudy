@@ -44,5 +44,6 @@ order by HOUR
 ```
 
 배운점1 : YEAR, MONTH, DAY, HOUR, MINUTE, SECOND  
-배운점2 :having은 group문 밑에 나와야하고 select안에 coulum가져올때 as로 명명하더라도 그 줄에서는 가져올 수 없다. 그래서 count(HOUR)한다고해서 못 이해함.  
+배운점2 :having은 group문 밑에 나와야하고 select안에 coulum가져올때 as로 명명하더라도 그 줄에서는 가져올 수 없다.  
+*그래서 첫째줄 select ... , count(HOUR) as COUNT에서 count(HOUR)을 인식 못함.*  
 배운점3 : between통해서 범위설정 가능  
