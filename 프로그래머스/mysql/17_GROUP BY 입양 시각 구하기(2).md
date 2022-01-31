@@ -44,6 +44,7 @@ HOUR	COUNT
 # SELECT (@HOUR := @HOUR +1) AS HOUR
 # FROM ANIMAL_OUTS
 # WHERE @HOUR < 23;
+# 위 코드는 일단 0 ~ 23을 HOUR로 표기해줌. SET @SOMETHING에서 꼭 마지막에 ; 써줘야함.
 
 SET @HOUR = -1;
 SELECT (@HOUR := @HOUR +1) AS HOUR,
