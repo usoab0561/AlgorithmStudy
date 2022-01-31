@@ -40,5 +40,7 @@ having count(name) > 1
 order by name
 ```
 
-group by에서는 where대신에 having을 써서 조건문을 사용합니당.  
-name으로 그룹을 만들었고, count(name)이 1이상(2개이상 나온걸로) 조건을 걸
+배운점과 단계  
+1. group by에서 컬럼에있는 요소들로 그룹을 만들어준다.  
+2. group by에서는 where대신에 having을 써서 조건문을 사용한다.  
+3. name으로 그룹을 만들었고, count(name)이 1이상(2개이상 나온걸로) 조건을 걸어줬다.  
