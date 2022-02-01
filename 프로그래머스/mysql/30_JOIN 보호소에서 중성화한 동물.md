@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/84604563/151905565-8f2c1857-751f-4ca1-8ae8-c13fc0d78117.png)
+![image](https://user-images.githubusercontent.com/84604563/151905942-2f145629-a6a9-4e16-8461-d379520cfe7b.png)
 
 ```mysql
 -- 코드를 입력하세요
