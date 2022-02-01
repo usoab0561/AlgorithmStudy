@@ -46,3 +46,44 @@ def solution(id_list, report, k):
 
 solution(	["muzi", "frodo", "apeach", "neo"], ["muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"], 2)
 ```
+
+2번째 
+
+```python
+# 신고 2번이상 당하면 게시판 이용정지
+# a가 (신고한 사람 == 정지된 사람) 이면 메일을 1개 받음
+# a가 (신고한사람 4명, 정지된사람 3명)이면 메일을 3개 받음
+
+# id_list는 id_list
+# report는 신고한사람 신고당한사람
+
+def solution(id_list, report, k):
+    
+    # id_list_reported = {} 는 report 당한 횟수
+    id_list_reported = {id : 0 for id in id_list}
+    id_list_mail = [0] * len(id_list)
+    # ## 'muzi' : 0 만듬
+    # for id in id_list:
+    #     id_list_reported[id] = 0
+        
+    ## 'muzi' : 1, 'frodo' : 2 만듬
+    for reported in set(report):
+        id_list_reported[reported.split()[1]] += 1
+    
+    #     #for문 2번해서 시간초과당함, but dictionary 기초사용법 특히 for문 key를 사용해서 dictionary 돌아가는거 배움
+    #     # id_list_reported를 돌면서 value값이 k 이상이면 report돌면서 신고받은놈을 확인하고, id_list_mail에 추가해줌.
+    # id_list_reported = {} #는 mail 받을 횟수
+    #     for key in id_list_reported:
+    #         if id_list_reported[key] >= k:
+    #             for reported in set(report):
+    #                 if reported.split()[1] == key:
+    #                     id_list_mail[reported.split()[0]] += 1
+    
+    # print(id_list_mail)
+    
+    for reported in set(report): # report를 돌아야한다는점을 잘 생각해야함. 안그러면 nested loop 됨
+        if id_list_reported[reported.split()[1]] >= k:
+            id_list_mail[id_list.index(reported.split()[0])] += 1
+            # 결국 id_list의 index에 접근해서 더해주면 됨
+    return id_list_mail
+    ```
