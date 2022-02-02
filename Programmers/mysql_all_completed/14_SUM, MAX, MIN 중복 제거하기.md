@@ -51,3 +51,17 @@ group by 1 의미가 위 그림처럼 첫번째 열로 정리를 한다는 말,
 
 ![image](https://user-images.githubusercontent.com/84604563/151705501-57b9d794-6b36-4602-bea0-7fe70e615b79.png)
 
+```mysql
+# -- 코드를 입력하세요
+# SELECT animal_type, count(*)
+# from animal_ins
+# group by animal_type
+# order by animal_type
+select animal_type, count(*)
+from animal_ins
+# where animal_type = 'Cat' or animal_type = 'Dog'
+where animal_type in ('Cat', 'Dog')
+group by animal_type
+order by animal_type
+```
+
