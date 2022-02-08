@@ -1,5 +1,9 @@
 https://programmers.co.kr/learn/courses/30/lessons/42889
 
+![image](https://user-images.githubusercontent.com/84604563/152914677-e2e21b9d-227c-4edb-a343-35f81a6566a1.png)
+
+![image](https://user-images.githubusercontent.com/84604563/152914719-5fe199fc-a528-4ca8-8882-458a725f8590.png)
+
 ```python
 # 11 : 12 ~ ..
 # 문제는 미리 풀었는데 dictionary사용법을 잘 모름. lambda 등과 함께
