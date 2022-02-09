@@ -1,5 +1,5 @@
 https://programmers.co.kr/learn/courses/30/lessons/42862#
-solved
+solved  
 
 ```python
 # 10 : 31 ~ 11 : 03
