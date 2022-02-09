@@ -4,6 +4,12 @@ https://programmers.co.kr/learn/courses/30/lessons/42889
 
 ![image](https://user-images.githubusercontent.com/84604563/152914719-5fe199fc-a528-4ca8-8882-458a725f8590.png)
 
+<img width="423" alt="image" src="https://user-images.githubusercontent.com/84604563/153097738-91d831bb-bc33-42f2-bb88-d3a4acfce66d.png">
+
+여기에서 ```sorted(result, lambda x: result[x],reverse=True)```가 있을때, result는 iterable data, lambda는 inputdata : 실제함수내용 (원래는뒤에인풋값인데 sorted에서는 iterable하면서 자동으로 넣어줌) 이렇게 됨  
+
+https://wikidocs.net/64
+
 ```python
 # 11 : 12 ~ ..
 # 문제는 미리 풀었는데 dictionary사용법을 잘 모름. lambda 등과 함께
