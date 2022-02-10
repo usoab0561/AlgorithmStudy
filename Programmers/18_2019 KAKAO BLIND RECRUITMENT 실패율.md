@@ -46,4 +46,7 @@ def solution(N, stages):
 ## lambda, dictionary사용법
 
 # 배운점
-## dic = [] 해두고 dic[key] = value 로 넣는 과정임
+## dictionary 사용법 dic = {} 해두고 dic[key] = value 로 넣는다. 초기화는 dic ={key : value}
+## sorted(iterabledata, key= ..., reverse=True)
+## (labmda parameter : outputs)(inputs)
+## ex) sorted(dic, key=lambda x: dic[x], reverse=True) 여기에서는 inputs가 안들어감 왜냐하면 sorted에서 x가 iterable하게 자동으로 들어가서
