@@ -72,5 +72,6 @@ def solution(n, arr1, arr2):
 ## list comprehension 아직 안 익숙. lists = [ [0 for i in range(n)] for j in range(n)]
 ## 간단한거 구현하고 (2진수만드는거) 전체를 만들때, 예시로 든 숫자(나는 5를 2진수로만들려고했음) 이거를 전체범위 input으로 바꿔야하는데 안바꿔서 헤맴
 ## 그러니까 조금 더 주의해서 예시를 전체로 바꿀때 생각해줘야함.
-## bin 사용하면 2진수로 그냥 바꿔줌. 그런데 0b00001 뭐 이런식으로나와서 a12 = str(bin(i|j)[2:]) 이렇게 자른거임.
+## bin 사용하면 2진수로 그냥 바꿔줌. 그런데 0b00001 뭐 이런식으로나와서 a12 = str(bin(i|j)[2:]) 이렇게 자른거임
 ## '2'.rjust(5, '0') -> 00002 로 해줌. 자매품으로 str.ljust('int', 'chr') 
+## for i,j in zip(arr1,arr2)로 i,j 가져오고 | 
