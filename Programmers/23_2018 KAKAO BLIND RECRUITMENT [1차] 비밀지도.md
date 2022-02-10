@@ -1,3 +1,6 @@
+solved
+https://programmers.co.kr/learn/courses/30/lessons/17681
+
 ```python
 # 11:17 ~ 11:51
 def solution(n, arr1, arr2):
