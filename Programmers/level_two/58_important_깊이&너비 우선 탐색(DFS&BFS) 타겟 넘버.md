@@ -1,3 +1,5 @@
+<img width="534" alt="image" src="https://user-images.githubusercontent.com/84604563/153986836-6f73c160-532c-4568-8055-23c56731d877.png">
+
 <img width="1024" alt="image" src="https://user-images.githubusercontent.com/84604563/153983514-82316bc0-5a1c-43e3-a3f0-83b6174a6d3a.png">
 
 <img width="997" alt="image" src="https://user-images.githubusercontent.com/84604563/153983475-842d3abc-51be-4517-9dd7-adc6e9e86465.png">
@@ -65,6 +67,6 @@ def solution(numbers, target):
     DFS(0,numbers,target,0)
     return answer
 ```    
-## 깊이의 끝까지 가게하고, 깊이의 끝을 만났을때 & 타겟숫자랑 같을때 answer을 더해줌. 재귀써서 깊이끝까지가게하고 L,V,R 순으로 돌게함
+## 깊이의 끝까지 가게하고, 깊이의 끝을 만났을때 & 타겟숫자랑 같을때 answer을 더해줌. 재귀써서 (좌,우로)깊이끝까지가게하고 L,V,R 순으로 돌게함
 
-# 결국 
+# 결국 문제는 모든 수를 다 사용해서, target이 맞는 수를 찾는것이었다. 그래서 모든 요소의 경우의 수를 마지막 index까지 다 생각한다 -> bfs/dfs 마지막 깊이일때 확인한다로 생각해야함
