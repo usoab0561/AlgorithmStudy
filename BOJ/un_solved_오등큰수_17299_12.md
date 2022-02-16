@@ -1,5 +1,5 @@
+<img width="1186" alt="image" src="https://user-images.githubusercontent.com/84604563/154186932-3a8043c4-d49e-4890-9b49-0c4a599c028c.png">
 https://www.acmicpc.net/problem/17299  
-![Uploading image.png…]()
 
 counter, i는 한번만돌고, stack에 index를 넣어서 앞에 값들 다 바꿔주는 문제!  
 왜 stack을 쓰냐면은 오른쪽에 있는 요소값에따라 이미 나온 요소의 값을 비교하고 바꾸기 떄문!  
