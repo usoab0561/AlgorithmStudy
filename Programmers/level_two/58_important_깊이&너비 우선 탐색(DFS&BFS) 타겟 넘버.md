@@ -50,13 +50,12 @@ def solution(numbers, target):
 answer = 0
 def DFS(idx, numbers, target, value):
     global answer
-    N = len(numbers)
-    if(idx== N and target == value):
+    if(idx== len(numbers) and target == value):
         answer += 1
         print(idx, value, True)
         
         return
-    if(idx == N):
+    if(idx == len(numbers)):
         print(idx, value)
         return
 
