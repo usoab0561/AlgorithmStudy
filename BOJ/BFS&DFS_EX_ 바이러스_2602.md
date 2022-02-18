@@ -26,18 +26,19 @@ print(graph)
 
 # 너비 우선 탐색
 def bfs(start_v):
-  discoverd = [start_v]
+
   # deque 생성
   queue = deque()
   queue.append(start_v)
-  
+  discoverd = [start_v]
+    
   while queue:
     v = queue.popleft()
 
     for w in range(len(graph[start_v])):
       if graph[v][w] == 1 and (w not in discoverd):
-        discoverd.append(w)
         queue.append(w)
+        discoverd.append(w)
 
   return discoverd
 
